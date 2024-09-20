@@ -1,0 +1,57 @@
+<html>
+  <head>
+	<title>Space Invaders Project</title>
+	<meta name="author" content="Khalima">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Pacifico&display=swap" rel="stylesheet">
+     <style>
+		body {
+            margin: 0;
+        }
+		canvas { display: block; }
+		.jacquard-12-regular {
+			font-family: "Jacquard 12", system-ui;
+			font-weight: 400;
+			font-style: normal;
+		}
+
+
+		#scoreboard {
+			position: absolute;
+			top: 10px;
+			width: 100%;
+			z-index: 100;
+			font-size: 40px;
+			color: #ff69b4;
+			display: block;
+			text-align: center;
+			font-family: "Jacquard 12", system-ui;
+			transition: all 0.3s ease-in-out;
+		}
+
+		#gameover {
+			z-index: 100;
+			color: #ff1493;
+			font-size: 100px;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-family: "Jacquard 12", system-ui;
+			text-shadow: 3px 3px 6px rgba(255S, 20, 147, 0.7);
+			border-radius: 30px;
+			text-align: center;
+			border: none;
+		}
+
+      </style>
+  </head>
+  <body> 
+		<div id="scoreboard"> health: 5 score: 0</div>
+		<div id="gameover"></div>
+    
+		<script type="module"  src = "js/main.js"></script>
+	
+  </body>
+</html>
